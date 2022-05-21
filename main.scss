@@ -1,0 +1,424 @@
+body{
+    margin:0;
+}
+
+.recipe-page{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "hed hed hed hed"
+    "ma ma ma ma"
+    "fot fot fot fot" ;
+  
+    
+}
+header{
+    grid-area: hed;
+    background-color: rgb(255, 255, 255);
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 20%  10%;
+    grid-template-rows: 2vh 4vh 4vh 4vh 2vh;
+   
+
+
+}
+
+header p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+footer{
+    grid-area: fot;
+    height: 15vh;
+    background-color: rgb(0, 0, 0);
+   
+  
+}
+.list-top{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 50px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-end;
+    
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    width: 100vw;
+    height: 4vh;
+   
+    } 
+    .nav-bord{
+        grid-row: 3/4;
+        width: 100vw;
+    }
+ 
+
+
+    .list-buttom{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        margin-right: 5vw;
+        margin-left: 6vw;
+        text-decoration: none;
+        justify-content: center;}
+
+        span{
+            margin-left: 8vw;
+            margin-right: 5vw;
+            font-size: 1vw;
+        }
+        .list-buttom a{
+            font-size: 1vw;
+            color: rgb(254, 249, 249);
+        }
+        .list-top a{
+          color: black;
+             }
+     
+    
+
+  
+header nav{
+    grid-row-start:2;
+    grid-column: 1/6;
+}
+
+.search{
+   grid-row: 2/4;
+   grid-column: 6/7;
+    width: 4vw;
+   height: 4vh;
+  text-align: center;
+  border-style: none;
+  
+}
+
+a{
+   grid-area: a;
+    text-decoration: none;
+    margin-right: 5vw;
+    font-size: 1.5vw;
+    }
+main{
+    grid-area: ma;
+    height:70vh;
+    
+    display: grid;
+    grid-template-columns: 8vw 25vw 25vw 25vw 10vw;
+    grid-template-rows: 1vh 20vh 20vh 20vh 1vh;
+    gap: 2%;
+   
+   
+    
+   
+    
+
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+
+.image-1{
+    background-image: url(/media/flat-lay-g1c3b48b3c_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 2/3;}
+
+    .text-image{
+        width:25vw ;
+        text-align: center;
+       background-color:rgba(26, 16, 16, 0.451);
+    color: rgb(251, 241, 241);
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+       
+
+.image-2{
+    background-image: url(/media/burger.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
+.image-3{
+    background-image: url(/media/pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.image-4{
+    background-image: url(/dessert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.image-5{
+    background-image: url(/media/potatos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.image-6{
+    background-image: url(/dessert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.image-7{
+    background-image: url(/media/breakfast.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.image-8{
+    background-image: url(/media/dinner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+.image-9{
+    background-image: url(/media/dinner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    
+    
+}
+#logo i{
+    margin-right: 2vw;
+    color: rgb(255, 255, 255); 
+}
+.p{
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);  
+}
+
+@media  only screen and (max-width: 480px)  {
+    main{
+        display: grid;
+        grid-template-columns: 10vw 80vw 10vw;
+        grid-template-rows: repeat(10,7vh);
+        gap: 1%;
+        }
+        .image{
+            grid-column: 2/3;
+        }
+        .image-1{
+            grid-row: 1/2;
+        }
+        .image-2{
+            grid-row: 2/3;
+        }
+        .image-3{
+            grid-row: 3/4;
+        }
+        .image-4{
+            grid-row:4/5 ;
+        }
+        .image-5{
+            grid-row: 5/6;
+        }
+        .image-6{
+            grid-row: 6/7;
+        }
+        .image-7{
+            grid-row: 7/8;
+        }
+        .image-8{
+            grid-row: 8/9;
+        }
+        .image-9{
+            grid-row: 9/10;
+        }
+        .text-image{
+            font: 2vh sans-serif;
+            width: 100vw;
+            height: 5vh;
+        }
+
+     .search{
+   grid-row: 2/4;
+   grid-column: 5/6;
+    width: 20vw;
+   height: 3vh;
+  
+}
+header p{
+   
+    font-size: 5vw;
+}
+    
+     
+    }
+    
+    @media   screen and (min-width: 480px)and (max-width: 778px)  {
+        main{
+            
+            grid-template-columns: 10vw 40vw 40vw 10vw;
+            grid-template-rows: repeat(10,7vh);
+            gap: 5%;
+            
+            }
+          
+            .image-1{
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+            .image-2{
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+            .image-3{
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            .image-4{
+                grid-column: 3/4;
+                grid-row:2/3 ;
+            }
+            .image-5{
+                grid-column: 2/3;
+                grid-row: 3/4;
+            }
+            .image-6{
+                grid-column: 3/4;
+                grid-row: 3/4;
+            }
+            .image-7{
+                grid-column: 2/3;
+                grid-row: 4/5;
+            }
+            .image-8{
+                grid-column: 3/4;
+                grid-row: 4/5;
+            }
+            .image-9{
+                grid-column: 2/3;
+                grid-row: 5/6;
+            }
+            .text-image{
+                font: 2vh sans-serif;
+                width: 100vw;
+                height: 5vh;
+            }
+            .search{
+                grid-row: 2/4;
+                grid-column: 5/6;
+                 width: 20vw;
+                height: 3vh;
+               
+             }
+             header p{
+                
+                 font-size: 3vw;
+             }
+         
+        
+         
+        }
+  
+
+/* style for extra pages*/
+#body-2{
+    margin: 0;
+  padding: 0;
+  background-image: url(/media/breakfast.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.container-2 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+ 
+ 
+ 
+
+  
+}
+.text{
+
+     
+        width: 100vw;
+        height: 30vh;
+        background-color:rgba(170, 6, 6, 0.22);
+        align-self: center;
+        text-align: center;
+        margin: 0%;
+        
+        font: 20px sans-serif;
+       
+        
+      }
+
+      /* style for potatos page*/
+      #body-3{
+        margin: 0;
+        padding: 0;
+        background-image: url(/media/potatos.jpg);
+       
+
+      }
+
+      .container-3{
+        display: flex;
+        width: 100vw;
+        height: 100vh;}
+
+.text-2{
+
+     
+        width: 100vw;
+        height: 40vh;
+        background-color:rgba(10, 47, 33, 0.584);
+        align-self: center;
+        text-align: center;
+        margin: 0%;
+        
+        font: 20px sans-serif;
+       
+        
+      }
+    
+    
+
+
+
+
+
+
+
