@@ -1,0 +1,516 @@
+
+$display:grid;
+$display2:flex;
+
+
+
+body {
+  margin:0;
+  overflow: hidden;
+ 
+ 
+}
+
+.recipe-page {
+  min-height: 100vh;
+  display: $display;
+  grid-template-rows: 15% 70% 15%;
+  grid-column: 100%;
+ 
+}
+
+header {
+display: $display;
+grid-template-rows: repeat(3,33.33%);
+grid-template-columns: 2% 96% 2%;
+}
+
+header p {
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  font-family: 'Great Vibes', cursive;
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+.go-back{
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  font-family: 'Great Vibes', cursive;
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+
+footer {
+  grid-row: 3/4;
+  background-color: black;
+}
+
+.list-top {
+  
+  display: $display2;
+  list-style: none;
+  text-decoration: none;
+  text-decoration: none;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  
+}
+.nav-bord{
+  grid-row: 2/3;
+  grid-column: 2/3;
+ 
+}
+
+
+
+.list-buttom {
+ 
+  display: $display2;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 2vw;
+  margin-left: 5.5vw;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+span {
+  margin-left: 8vw;
+  margin-right: 5vw;
+  font-size: 1vw;
+}
+
+.list-buttom a {
+  font-size: 1vw;
+  color: #fef9f9;
+}
+
+.list-top a {
+  color: black;
+}
+
+
+
+.search {
+  grid-column: 2/3;
+  grid-row: 1/2;
+margin-left: 90%;
+font-size: 1.5vw;
+margin-top: 1%;
+border-style: none;
+}
+
+a {
+ 
+  text-decoration: none;
+  margin-right: 5vw;
+  font-size: 1.5vw;
+}
+
+main {
+  grid-row: 2/3;
+  display: $display;
+grid-template-rows: repeat(3,33.33%);
+grid-template-columns: repeat(3,33.33%);
+gap: 2%;
+margin-bottom: 2%;
+margin-left: 2%;
+
+}
+
+.image {
+ 
+  display: $display2;
+  
+          justify-content: center;
+ 
+          align-items: flex-end;
+          background-position: center;
+          
+}
+
+.image-1 {
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/05/12/32/flat-lay-2583212_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row:1/2 ;
+grid-column:1/2 ;
+}
+
+.text-image {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(26, 16, 16, 0.451);
+  color: #fbf1f1;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-2 {
+  background-image: url(https://cdn.pixabay.com/photo/2021/01/06/10/11/burger-5893927_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row:1/2 ;
+grid-column:2/3 ;
+}
+
+.image-3 {
+  background-image: url(https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row:1/2 ;
+grid-column:3/4 ;
+}
+
+.image-4 {
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/31/18/02/strawberry-dessert-2191973_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row: 2/3;
+grid-column:1/2;
+}
+
+.image-5 {
+  background-image: url(https://cdn.pixabay.com/photo/2020/06/02/18/10/noodles-5252012_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row: 2/3;
+grid-column: 2/3;
+}
+
+.image-6 {
+  background-image: url(https://cdn.pixabay.com/photo/2017/04/23/09/44/smoothies-2253423_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row: 2/3;
+grid-column: 3/4;
+}
+
+.image-7 {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/06/23/16/breakfast-1804436_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row:3/4 ;
+grid-column:1/2 ;
+}
+
+.image-8 {
+  background-image: url(https://cdn.pixabay.com/photo/2018/04/13/17/14/vegetable-skewer-3317060_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row: 3/4;
+grid-column: 2/3;
+}
+
+.image-9 {
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/19/10/38/food-1050813_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+grid-row:3/4 ;
+grid-column:3/4 ;
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: $display2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1vw;
+}
+
+#logo i {
+  margin-right: 2vw;
+  color: white;
+}
+
+.p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: $display2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  
+  
+  main {
+   
+  grid-template-rows: repeat(9,9.3%);
+  grid-template-columns: 84%;
+  gap: 2%;
+  font-size: 20%;
+  margin-right: 8%;
+  margin-left: 8%;
+  
+  }
+
+ 
+  .image {
+   
+    grid-column: 1/10;
+   
+  }
+  .image-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .image-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .image-3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .image-4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  .image-5 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+  }
+  .image-6 {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+  }
+  .image-7 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
+  }
+  .image-8 {
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    grid-row: 8/9;
+  }
+  .image-9 {
+   
+    grid-row: 9/10;
+  }
+  a {
+    font-size: 2vw;
+  }
+  .search {
+   font-size: 2vw;
+  
+  }
+  header p{
+   
+    font-size: 3.5vw;
+  }
+
+  }
+ 
+ 
+@media screen and (min-width: 480px) and (max-width: 778px) {
+  main {
+   grid-template-columns: repeat(2,50%);
+   grid-template-rows: repeat(5,18.5%);
+   gap: 2%;
+   font-size: 20%;
+   margin-right: 8%;
+   margin-left: 8%;
+  }
+  .image-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+   
+  }
+  .image-2 {
+grid-column: 2/3;
+grid-row: 1/2;
+  }
+  .image-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+ 
+  }
+  .image-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  
+  }
+  .image-5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+ 
+  }
+  .image-6 {
+
+ grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .image-7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+  }
+  .image-8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+ 
+
+  }
+  .image-9 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    
+  }
+  a {
+    font-size: 1.8vw;
+  }
+  .search {
+   font-size: 1.7vw;
+  
+  }
+  header p{
+   
+    font-size: 2.5vw;
+  }
+
+
+}
+
+/* style for extra pages*/
+#body-2 {
+  margin: 0;
+  padding: 0;
+
+}
+
+.container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://www.kitchensanctuary.com/wp-content/uploads/2020/01/Chicken-Parmesan-square-FS-38.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: change 15s ease-out infinite both;
+
+}
+
+
+.text {
+  width: 100vw;
+  height: 30vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin: 0%;
+  font: 20px sans-serif;
+  margin: 10%;
+  animation: text-anim 3s cubic-bezier(0.550, 0.085, 0.680, 0.530)  both ;
+
+}
+
+
+ @keyframes change {
+  0% {
+    transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes change {
+  0% {
+    transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+   transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+  transform: scale(1.25) translateY(-15px);
+  transform: scale(1.25) translateY(-15px);
+  transform-origin: top;
+  transform-origin: top;
+  }
+}
+
+
+ @keyframes text-anim {
+  0% {
+    filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-anim  {
+  0% {
+    filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+/* style for potatos page*/
+#body-3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://static.onecms.io/wp-content/uploads/sites/9/2022/04/15/Sour-Power-FT-2-MAG0522.jpg);
+
+}
+
+.text-2 {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(60, 192, 141, 0.338);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font: 2vw sans-serif;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=main.css.map */
